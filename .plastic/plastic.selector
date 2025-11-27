@@ -1,0 +1,4 @@
+repository "CPSC 386 Project 2/CPSC 386 Project 2 2025-11-04_19-31-00@20067514006794@cloud"
+  path "/"
+    br "/main"
+    co "/main"
