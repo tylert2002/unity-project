@@ -8,6 +8,7 @@ TagManager:
   - Spike
   - Coin
   - Health
+  - Ground
   layers:
   - Default
   - TransparentFX

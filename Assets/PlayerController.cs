@@ -57,17 +57,22 @@ public class PlayerController : MonoBehaviour, IDataPersistence
                 SoundEffectManager.Play("Jump");
                 isGrounded = false;
                 doubleJump = true;  
-                animator.SetBool("isJumping", true);
+                animator.SetTrigger("jump");
             }
             else if (doubleJump) 
             {
                 rigidBody.linearVelocity = Vector2.up * jumpForce * transform.localScale.y;
                 SoundEffectManager.Play("Jump");
                 doubleJump = false;  
-                animator.SetBool("isJumping", true);
+                animator.SetTrigger("jump");
             }
         
         }
+
+        animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+        animator.SetFloat("magnitude", rigidBody.linearVelocity.magnitude);
+        animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+
         rigidBody.gravityScale = 7f;
 
         if(transform.position.y < -55)
@@ -92,8 +97,8 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     private void FixedUpdate()
     {
         rigidBody.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rigidBody.linearVelocity.y);
-        animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.linearVelocity.x));
-        animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+        // animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.linearVelocity.x));
+        // animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
     }
 
     void TurnAround()
@@ -116,7 +121,7 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     void OnTriggerEnter2D(Collider2D collision)
     {
         isGrounded = true;
-        animator.SetBool("isJumping", !isGrounded);
+        // animator.SetBool("isJumping", !isGrounded);
     }
 
     
