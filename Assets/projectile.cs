@@ -12,6 +12,7 @@ public class projectile : MonoBehaviour
         EnemyShooting enemy3 = collision.GetComponent<EnemyShooting>();
         EnemyKnightLV3 enemy4 = collision.GetComponent<EnemyKnightLV3>();
         EnemyEyeballLV3 enemy5 = collision.GetComponent<EnemyEyeballLV3>();
+        EnemyKnightLV4 enemy6 = collision.GetComponent<EnemyKnightLV4>();
 
         if(enemy)
         {
@@ -44,6 +45,13 @@ public class projectile : MonoBehaviour
         if(enemy5)
         {
             enemy5.TakeDamage(projectileDamage);
+
+            Destroy(gameObject);
+        }
+        
+        if(enemy6)
+        {
+            enemy6.TakeDamage(projectileDamage);
 
             Destroy(gameObject);
         }
