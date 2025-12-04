@@ -16,6 +16,7 @@ public class PlayerControllerLV4 : MonoBehaviour
     private SpriteRenderer spriteRend;
     public GameObject player; 
     public GameManagerLV4 gameManager;
+    public Transform Aim;
 
     public Rigidbody2D rigidBody;
     Animator animator;
@@ -103,6 +104,7 @@ public class PlayerControllerLV4 : MonoBehaviour
         rigidBody.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rigidBody.linearVelocity.y);
         // animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.linearVelocity.x));
         // animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+    
     }
 
     void TurnAround()
@@ -110,9 +112,21 @@ public class PlayerControllerLV4 : MonoBehaviour
         if(isFacingRight && horizontalMovement > 0f || !isFacingRight && horizontalMovement < 0f)
         {
             isFacingRight = !isFacingRight;
+
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
             transform.localScale = ls;
+
+            // Flip sword/Aim
+            Vector3 aimScale = Aim.localScale; 
+            aimScale.x *= -1f;
+            Aim.localScale = aimScale;
+
+            // Flip sword position left/right
+            Vector3 aimPos = Aim.localPosition;
+            aimPos.x *= -1f;
+            Aim.localPosition = aimPos;
+
         }
     }
 
@@ -140,7 +154,7 @@ public class PlayerControllerLV4 : MonoBehaviour
 
         if (collision.CompareTag("Health"))
         {
-            HealthLV3 healthScript = GetComponent<HealthLV3>();
+            HealthLV4 healthScript = GetComponent<HealthLV4>();
             if (healthScript != null)
             {
                 healthScript.Heal(20); 

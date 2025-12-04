@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class EnemyKnightDamageLV4 : MonoBehaviour
+public class EyeballDamageLV4 : MonoBehaviour
 {
     public HealthLV4 playerHealth;
     public float damage;
