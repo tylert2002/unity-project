@@ -3188,7 +3188,7 @@ PrefabInstance:
       objectReference: {fileID: 1685417104}
     - target: {fileID: 2582571893000894241, guid: 3716bb9088298014d8bfc8056d2c9ee6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 69.4
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4332388538943266952, guid: 3716bb9088298014d8bfc8056d2c9ee6, type: 3}
       propertyPath: m_IsActive
@@ -3236,7 +3236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8009604605398236664, guid: 3716bb9088298014d8bfc8056d2c9ee6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 71.5
+      value: 61.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3440,6 +3440,18 @@ PrefabInstance:
     - target: {fileID: 4602160629653203602, guid: 739db3c86c4a5cf4380c0f60020b1688, type: 3}
       propertyPath: m_Name
       value: Protagonist
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735670519105034593, guid: 739db3c86c4a5cf4380c0f60020b1688, type: 3}
+      propertyPath: m_Size.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735670519105034593, guid: 739db3c86c4a5cf4380c0f60020b1688, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4599071993058699843, guid: 5abf908cd8e3d7b4db24ffe15a550765, type: 3}
+    - target: {fileID: 6735670519105034593, guid: 739db3c86c4a5cf4380c0f60020b1688, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7129867783851953296, guid: 739db3c86c4a5cf4380c0f60020b1688, type: 3}
       propertyPath: player

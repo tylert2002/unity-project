@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Coin : MonoBehaviour
+public class CoinLV4 : MonoBehaviour
 {
     [SerializeField] private int value;
     private bool hasTriggered;
@@ -22,8 +22,7 @@ public class Coin : MonoBehaviour
             coinManager.ChangeCoins(value);
             Destroy(gameObject);
             
-            GameManagerLV3.instance.CheckForLevelCompletion();
-           
+            GameManagerLV4.instance.CheckForLevelCompletion();
         }
     }
 }

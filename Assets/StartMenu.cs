@@ -21,6 +21,11 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void LevelSelection()
+    {
+        SceneManager.LoadScene("LevelSelection");
+    } 
+
     public void LoadGame()
     {
         Debug.Log("Load Game Clicked");

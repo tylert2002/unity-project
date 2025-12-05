@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 5abf908cd8e3d7b4db24ffe15a550765
+guid: 2592092cafdd9d942b3b080889ac51ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4380494521951243042
-    second: Protagonist_0
-  - first:
-      213: 3465863978126101653
-    second: Protagonist_1
-  - first:
-      213: 4599071993058699843
-    second: Protagonist_2
-  - first:
-      213: 2052568051082853070
-    second: Protagonist_3
+      213: 508591715825662441
+    second: Falling_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Protagonist_0
+      name: Falling_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 129
-        height: 244
+        x: 2
+        y: 1
+        width: 100
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,86 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed43d8ee07b5533c0800000000000000
-      internalID: -4380494521951243042
+      spriteID: 9e9be7d8871ee0700800000000000000
+      internalID: 508591715825662441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Protagonist_1
+      name: Falling_1
       rect:
         serializedVersion: 2
-        x: 138
-        y: 0
-        width: 129
-        height: 244
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59c4708dce8391030800000000000000
-      internalID: 3465863978126101653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonist_2
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 0
-        width: 129
-        height: 244
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34a26ba5c9f23df30800000000000000
-      internalID: 4599071993058699843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonist_3
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 0
-        width: 129
-        height: 244
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecafb1a74cf2c7c10800000000000000
-      internalID: 2052568051082853070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonist_4
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 0
-        width: 129
-        height: 244
+        x: 102
+        y: 1
+        width: 100
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +137,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761b243a109170e44b542ad9bc7167b2
-      internalID: -682520379
+      spriteID: 91a7e19aaf4708e4b9a25e858215e4c0
+      internalID: 1314674720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falling_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b948d996289203048984e993a0981061
+      internalID: 372733735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falling_3
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781976c9f61e9d7439762e7fd285cb6b
+      internalID: 1642078566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falling_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d4d4f516cde742856e9c24c613b5a
+      internalID: 163524944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falling_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1
+        width: 100
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbc1a0126693604cb15c917ec80cf8b
+      internalID: 853138325
       vertices: []
       indices: 
       edges: []
@@ -222,7 +235,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: df8a043f0bcbb9841af22263757e8409
+    spriteID: b5277a5bd381e15408bc50637f93bb9e
     internalID: 0
     vertices: []
     indices: 
@@ -232,11 +245,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Protagonist_0: -4380494521951243042
-      Protagonist_1: 3465863978126101653
-      Protagonist_2: 4599071993058699843
-      Protagonist_3: 2052568051082853070
-      Protagonist_4: -682520379
+      Falling_0: 508591715825662441
+      Falling_1: 1314674720
+      Falling_2: 372733735
+      Falling_3: 1642078566
+      Falling_4: 163524944
+      Falling_5: 853138325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
