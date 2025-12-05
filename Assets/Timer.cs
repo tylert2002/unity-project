@@ -9,10 +9,10 @@ public class Timer : MonoBehaviour
     [SerializeField] float remainingTime;
 
     private bool gameOverTriggered = false;
-    // Update is called once per frame
+    
     void Update()
     {
-        if (gameOverTriggered) return; 
+        if (gameOverTriggered) return;
 
         remainingTime -= Time.deltaTime;
         remainingTime = Mathf.Max(remainingTime, 0);
@@ -24,8 +24,9 @@ public class Timer : MonoBehaviour
         if (remainingTime <= 0 && !gameOverTriggered)
         {
             gameOverTriggered = true;
-            Destroy(FindObjectOfType<PlayerControllerLV4>().gameObject);
+            Destroy(FindFirstObjectByType<PlayerControllerLV4>().gameObject); // Updated here
             GameManagerLV4.instance.gameOver();
         }
     }
 }
+
