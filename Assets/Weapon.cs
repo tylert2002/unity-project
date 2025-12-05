@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
         EnemyKnightLV4 enemy = collision.GetComponent<EnemyKnightLV4>();
         EnemyEyeballLV4 enemy2 = collision.GetComponent<EnemyEyeballLV4>();
         EnemyShootingLV4 enemy3 = collision.GetComponent<EnemyShootingLV4>();
+        GuardianEyeLV4 enemy4 = collision.GetComponent<GuardianEyeLV4>();
         if(enemy != null)
         {
             enemy.TakeDamage(damage);
@@ -22,6 +23,11 @@ public class Weapon : MonoBehaviour
         if(enemy3 != null)
         {
             enemy3.TakeDamage(damage);
+        }
+        if(enemy4 != null)
+        {
+            enemy4.TakeDamage(damage);
+
         }
         
     }

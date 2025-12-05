@@ -23,13 +23,16 @@ public class GameManagerLV4 : MonoBehaviour
         }
         instance = this;
         enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        Debug.Log("Enemies at start: " + enemiesRemaining);
     }
     
     void Start()
     {
        enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
+       
       
     }
+
 
     /*public void LoadData(GameData data)
     {
